@@ -1,0 +1,34 @@
+version: '3.8'
+
+services:
+  conversor:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile
+    container_name: conversor-moedas
+    volumes:
+      - ../data:/app/data
+      - ../logs:/app/logs
+      - ../cache:/app/cache
+      - ../charts:/app/charts
+    environment:
+      - DATABASE_URL=sqlite:///data/conversor.db
+      - CACHE_ENABLED=true
+      - LOG_LEVEL=INFO
+    command: python -m src.cli interactive
+    stdin_open: true
+    tty: true
+
+  conversor-gui:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile
+    container_name: conversor-moedas-gui
+    volumes:
+      - /tmp/.X11-unix:/tmp/.X11-unix
+      - ../data:/app/data
+    environment:
+      - DISPLAY=${DISPLAY}
+      - DATABASE_URL=sqlite:///data/conversor.db
+    command: python -m src.gui
+    network_mode: host

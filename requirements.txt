@@ -1,0 +1,29 @@
+# Core
+requests>=2.31.0
+python-dotenv>=1.0.0
+
+# CLI Bonita
+rich>=13.7.0
+click>=8.1.0
+
+# Banco de Dados
+sqlalchemy>=2.0.0
+alembic>=1.13.0
+
+# Gráficos
+matplotlib>=3.8.0
+
+# Exportação
+openpyxl>=3.1.0
+reportlab>=4.0.0
+
+# Utilitários
+pydantic>=2.5.0
+python-dateutil>=2.8.0
+
+# Desenvolvimento
+pytest>=7.4.0
+pytest-cov>=4.1.0
+black>=23.0.0
+flake8>=6.0.0
+mypy>=1.7.0
