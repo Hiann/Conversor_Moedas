@@ -243,10 +243,17 @@ python main.py --gui
 4. Push (`git push origin feature/nova-feature`)
 5. Abra um Pull Request
 
-## 📄 Licença
+## 📫 Autor
 
-MIT License - veja [LICENSE](LICENSE) para detalhes.
+<div align="center">
 
----
+**Hiann Alexander Mendes de Oliveira** *Desenvolvedor Backend & Entusiasta de IA*
 
-⭐ **Dica**: Use `python -m src.cli --help` para ver todos os comandos disponíveis!
+<a href="https://www.linkedin.com/in/hiann-alexander" target="_blank">
+  <img src="https://img.shields.io/badge/LinkedIn-Conectar-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn Badge">
+</a>
+<a href="https://github.com/Hiann" target="_blank">
+  <img src="https://img.shields.io/badge/GitHub-Ver_Perfil-100000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub Badge">
+</a>
+
+</div
